@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Description>.NET Core Project for building RSS Feeds</Description>
-    <VersionPrefix>1.0.4</VersionPrefix>
+    <VersionPrefix>1.0.5.1</VersionPrefix>
     <Authors>Shawn Wildermuth</Authors>
     <TargetFramework>netstandard1.3</TargetFramework>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -20,6 +20,11 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Rfc822" Version="1.0.4" />
+  </ItemGroup>
 
 </Project>
